@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgb(100, 0, 0);
+  color: gold;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h1 {
+  font-size: 22px;
+  color: gold;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: gold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+main {
+  padding: 100px 20px 20px;
+}
+
+.features ul {
+  list-style-type: none;
+}
+
+.features li {
+  background-color: rgb(100, 0, 0);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.features li h1 {
+  font-size: 24px;
+  color: cyan;
+}
+
+.features li p {
+  font-size: 16px;
+  color: white;
+}
+
+.video iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin: 30px 0;
+}
+
+.price-tables {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+table {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgb(155, 155, 255);
+}
+
+table th {
+  background-color: maroon;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+table td {
+  padding: 10px;
+}
+
+table ul {
+  list-style-type: none;
+}
+
+table h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+table p {
+  font-size: 16px;
+  color: #333;
+}
+
+.Subscribe {
+  font-size: 20px;
+  margin-top: 50px;
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sasur {
+  color: white;
+}
+
+#email {
+  color: rgb(219, 238, 219);
+  padding: 10px;
+  margin-top: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+#submit {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: lime;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: green;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .price-tables {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #email {
+    width: 80%;
+  }
+}
+
+
